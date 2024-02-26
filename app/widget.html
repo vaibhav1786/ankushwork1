@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
+  </head>
+  <body>
+    <div class="contentboxouter">
+      <div class="container">
+        <div class="table_parent">
+          <div class="table_header">
+            <h2>General Complaint List</h2>
+            <div class="right_headerSection">
+              <div class="search_header">
+                <input type="text" />
+                <button style="cursor: pointer">Search</button>
+              </div>
+              <div class="refresh">
+                <button id="refreshButton">
+                  <img src="./img/refresh.png" alt="refresh" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="compldata">
+            <span>FFBR Date :</span>
+            <ul>
+              <li>
+                <div class="completeData">
+                  <label for="from"
+                    >From Date:<span style="color: red">*</span></label
+                  >
+                  <input type="date" name="" id="fromDateFFBR" />
+                </div>
+              </li>
+              <li>
+                <div class="completeData">
+                  <label for="from"
+                    >To Date:<span style="color: red">*</span></label
+                  >
+                  <input type="date" name="" id="toDateFFBR" />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="table_records newtablezebra">
+            <table cellspacing="0">
+              <thead>
+                <th>Sr.No</th>
+                <th>FFBR External no</th>
+                <th>FFBR Internal no</th>
+                <th>FFBR Launching Date</th>
+                <th>Modified Date</th>
+                <th>Acknowledgment Date</th>
+                <th>Producate Group</th>
+                <th>Product Segment</th>
+                <th>Model</th>
+                <th>Product Sr No</th>
+                <th>Mfg Date</th>
+                <th>Delivery Date</th>
+                <th>Inst.Date</th>
+                <th>Failure Date</th>
+                <th>Complaint Type</th>
+                <th>Complaint Type Description</th>
+                <th>Quantity No</th>
+                <th>Failed Component</th>
+                <th>Is Failed Part Send To Factory</th>
+                <th>FailComp Sr No</th>
+                <th>Field Visit Required</th>
+                <th>Obsv.Dealer</th>
+                <th>Dealer Name</th>
+                <th>SDE Name</th>
+                <th>Customer Name</th>
+                <th>Location</th>
+                <th>Address 1</th>
+                <th>Email ID</th>
+                <th>User Name</th>
+                <th>Region</th>
+                <th>Branch</th>
+                <th>Department</th>
+                <th>Ticket No</th>
+                <th>Obligation</th>
+                <th>Product Sub Category</th>
+                <th>Coil Type</th>
+                <th>Chassis Type</th>
+                <th>Manufacture At</th>
+                <th>Division</th>
+                <th>Plant</th>
+                <th>Owner Assg Date</th>
+                <th>Containment Action</th>
+                <th>Containment Action Date</th>
+                <th>Preliminary Root Cause Analysis</th>
+                <th>Corrective Action</th>
+                <th>Corrective Act Date</th>
+                <th>Design Process Documentation Changes</th>
+                <th>8D/CAPA</th>
+                <th>More Then 3 Time</th>
+                <th>No of Days</th>
+                <th>Resolution Date</th>
+                <th>No Of Days Resolve</th>
+                <th>Closure Date</th>
+                <th>No Of Days Closed</th>
+                <th>Status</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sr.No</td>
+                  <td>FFBR External no</td>
+                  <td>FFBR Internal no</td>
+                  <td>FFBR Launching Date</td>
+                  <td>Modified Date</td>
+                  <td>Acknowledgment Date</td>
+                  <td>Producate Group</td>
+                  <td>Product Segment</td>
+                  <td>Model</td>
+                  <td>Product Sr No</td>
+                  <td>Mfg Date</td>
+                  <td>Delivery Date</td>
+                  <td>Inst.Date</td>
+                  <td>Failure Date</td>
+                  <td>Complaint Type</td>
+                  <td>Complaint Type Description</td>
+                  <td>Quantity No</td>
+                  <td>Failed Component</td>
+                  <td>Is Failed Part Send To Factory</td>
+                  <td>FailComp Sr No</td>
+                  <td>Field Visit Required</td>
+                  <td>Obsv.Dealer</td>
+                  <td>Dealer Name</td>
+                  <td>SDE Name</td>
+                  <td>Customer Name</td>
+                  <td>Location</td>
+                  <td>Address 1</td>
+                  <td>Email ID</td>
+                  <td>User Name</td>
+                  <td>Region</td>
+                  <td>Branch</td>
+                  <td>Department</td>
+                  <td>Ticket No</td>
+                  <td>Obligation</td>
+                  <td>Product Sub Category</td>
+                  <td>Coil Type</td>
+                  <td>Chassis Type</td>
+                  <td>Manufacture At</td>
+                  <td>Division</td>
+                  <td>Plant</td>
+                  <td>Owner Assg Date</td>
+                  <td>Containment Action</td>
+                  <td>Containment Action Date</td>
+                  <td>Preliminary Root Cause Analysis</td>
+                  <td>Corrective Action</td>
+                  <td>Corrective Act Date</td>
+                  <td>Design Process Documentation Changes</td>
+                  <td>8D/CAPA</td>
+                  <td>More Then 3 Time</td>
+                  <td>No of Days</td>
+                  <td>Resolution Date</td>
+                  <td>No Of Days Resolve</td>
+                  <td>Closure Date</td>
+                  <td>No Of Days Closed</td>
+                  <td>Status</td>
+                </tr>
+                <tr>
+                  <td>Sr.No</td>
+                  <td>FFBR External no</td>
+                  <td>FFBR Internal no</td>
+                  <td>FFBR Launching Date</td>
+                  <td>Modified Date</td>
+                  <td>Acknowledgment Date</td>
+                  <td>Producate Group</td>
+                  <td>Product Segment</td>
+                  <td>Model</td>
+                  <td>Product Sr No</td>
+                  <td>Mfg Date</td>
+                  <td>Delivery Date</td>
+                  <td>Inst.Date</td>
+                  <td>Failure Date</td>
+                  <td>Complaint Type</td>
+                  <td>Complaint Type Description</td>
+                  <td>Quantity No</td>
+                  <td>Failed Component</td>
+                  <td>Is Failed Part Send To Factory</td>
+                  <td>FailComp Sr No</td>
+                  <td>Field Visit Required</td>
+                  <td>Obsv.Dealer</td>
+                  <td>Dealer Name</td>
+                  <td>SDE Name</td>
+                  <td>Customer Name</td>
+                  <td>Location</td>
+                  <td>Address 1</td>
+                  <td>Email ID</td>
+                  <td>User Name</td>
+                  <td>Region</td>
+                  <td>Branch</td>
+                  <td>Department</td>
+                  <td>Ticket No</td>
+                  <td>Obligation</td>
+                  <td>Product Sub Category</td>
+                  <td>Coil Type</td>
+                  <td>Chassis Type</td>
+                  <td>Manufacture At</td>
+                  <td>Division</td>
+                  <td>Plant</td>
+                  <td>Owner Assg Date</td>
+                  <td>Containment Action</td>
+                  <td>Containment Action Date</td>
+                  <td>Preliminary Root Cause Analysis</td>
+                  <td>Corrective Action</td>
+                  <td>Corrective Act Date</td>
+                  <td>Design Process Documentation Changes</td>
+                  <td>8D/CAPA</td>
+                  <td>More Then 3 Time</td>
+                  <td>No of Days</td>
+                  <td>Resolution Date</td>
+                  <td>No Of Days Resolve</td>
+                  <td>Closure Date</td>
+                  <td>No Of Days Closed</td>
+                  <td>Status</td>
+                </tr>
+                <tr>
+                  <td>Sr.No</td>
+                  <td>FFBR External no</td>
+                  <td>FFBR Internal no</td>
+                  <td>FFBR Launching Date</td>
+                  <td>Modified Date</td>
+                  <td>Acknowledgment Date</td>
+                  <td>Producate Group</td>
+                  <td>Product Segment</td>
+                  <td>Model</td>
+                  <td>Product Sr No</td>
+                  <td>Mfg Date</td>
+                  <td>Delivery Date</td>
+                  <td>Inst.Date</td>
+                  <td>Failure Date</td>
+                  <td>Complaint Type</td>
+                  <td>Complaint Type Description</td>
+                  <td>Quantity No</td>
+                  <td>Failed Component</td>
+                  <td>Is Failed Part Send To Factory</td>
+                  <td>FailComp Sr No</td>
+                  <td>Field Visit Required</td>
+                  <td>Obsv.Dealer</td>
+                  <td>Dealer Name</td>
+                  <td>SDE Name</td>
+                  <td>Customer Name</td>
+                  <td>Location</td>
+                  <td>Address 1</td>
+                  <td>Email ID</td>
+                  <td>User Name</td>
+                  <td>Region</td>
+                  <td>Branch</td>
+                  <td>Department</td>
+                  <td>Ticket No</td>
+                  <td>Obligation</td>
+                  <td>Product Sub Category</td>
+                  <td>Coil Type</td>
+                  <td>Chassis Type</td>
+                  <td>Manufacture At</td>
+                  <td>Division</td>
+                  <td>Plant</td>
+                  <td>Owner Assg Date</td>
+                  <td>Containment Action</td>
+                  <td>Containment Action Date</td>
+                  <td>Preliminary Root Cause Analysis</td>
+                  <td>Corrective Action</td>
+                  <td>Corrective Act Date</td>
+                  <td>Design Process Documentation Changes</td>
+                  <td>8D/CAPA</td>
+                  <td>More Then 3 Time</td>
+                  <td>No of Days</td>
+                  <td>Resolution Date</td>
+                  <td>No Of Days Resolve</td>
+                  <td>Closure Date</td>
+                  <td>No Of Days Closed</td>
+                  <td>Status</td>
+                </tr>
+                <tr>
+                  <td>Sr.No</td>
+                  <td>FFBR External no</td>
+                  <td>FFBR Internal no</td>
+                  <td>FFBR Launching Date</td>
+                  <td>Modified Date</td>
+                  <td>Acknowledgment Date</td>
+                  <td>Producate Group</td>
+                  <td>Product Segment</td>
+                  <td>Model</td>
+                  <td>Product Sr No</td>
+                  <td>Mfg Date</td>
+                  <td>Delivery Date</td>
+                  <td>Inst.Date</td>
+                  <td>Failure Date</td>
+                  <td>Complaint Type</td>
+                  <td>Complaint Type Description</td>
+                  <td>Quantity No</td>
+                  <td>Failed Component</td>
+                  <td>Is Failed Part Send To Factory</td>
+                  <td>FailComp Sr No</td>
+                  <td>Field Visit Required</td>
+                  <td>Obsv.Dealer</td>
+                  <td>Dealer Name</td>
+                  <td>SDE Name</td>
+                  <td>Customer Name</td>
+                  <td>Location</td>
+                  <td>Address 1</td>
+                  <td>Email ID</td>
+                  <td>User Name</td>
+                  <td>Region</td>
+                  <td>Branch</td>
+                  <td>Department</td>
+                  <td>Ticket No</td>
+                  <td>Obligation</td>
+                  <td>Product Sub Category</td>
+                  <td>Coil Type</td>
+                  <td>Chassis Type</td>
+                  <td>Manufacture At</td>
+                  <td>Division</td>
+                  <td>Plant</td>
+                  <td>Owner Assg Date</td>
+                  <td>Containment Action</td>
+                  <td>Containment Action Date</td>
+                  <td>Preliminary Root Cause Analysis</td>
+                  <td>Corrective Action</td>
+                  <td>Corrective Act Date</td>
+                  <td>Design Process Documentation Changes</td>
+                  <td>8D/CAPA</td>
+                  <td>More Then 3 Time</td>
+                  <td>No of Days</td>
+                  <td>Resolution Date</td>
+                  <td>No Of Days Resolve</td>
+                  <td>Closure Date</td>
+                  <td>No Of Days Closed</td>
+                  <td>Status</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+
+          <div
+            class="table_records newtablezebra"
+            id="tableData"
+            style="overflow-x: auto"
+          >
+            <table id="table">
+              <thead>
+                <tr style="background-color: #edefee">
+                  <th>Sr. No</th>
+                  <th>FFBR External No</th>
+                  <th>FFBR Inernal No</th>
+                  <th>FFBR Launching Date</th>
+                  <th>Modified Date</th>
+                  <th>New Model</th>
+                  <th>Complaint Type</th>
+                  <th>Is Failed Part Send To Factory</th>
+                  <th>Division</th>
+                  <th>Preliminary Root Cause Analysis</th>
+                  <th>Closure Date</th>
+                  <th>No Of Days Closed</th>
+                  <th>Status Details</th>
+                  <th>Acknowledgement Date</th>
+                  <th>Product Group</th>
+                  <th>Product Segment</th>
+                  <th>Model</th>
+                  <th>Product Sr No</th>
+                  <th>Mfg Date</th>
+                  <th>Delivery Date</th>
+                  <th>Inst. Date</th>
+                  <th>Failure Date</th>
+                  <th>Nature Of Problem</th>
+                  <th>Quantity No</th>
+                  <th>FailedComp Sr No</th>
+                  <th>Field Visit Required</th>
+                  <th>Obsv Dealer</th>
+                  <th>Dealer Name</th>
+                  <th>SDE Name</th>
+                  <th>Customer Name</th>
+                  <th>Location</th>
+                  <th>Address 1</th>
+                  <th>Email ID</th>
+                  <th>User Name</th>
+                  <th>Region</th>
+                  <th>Branch</th>
+                  <th>Department</th>
+                  <th>Ticket No</th>
+                  <th>Obligation</th>
+                  <th>Product Sub Category</th>
+                  <th>Coil Type</th>
+                  <th>Chassis Type</th>
+                  <th>Manufacture At</th>
+                  <th>Plant</th>
+                  <th>Submission Date</th>
+                  <th>Owner Assg Date</th>
+                  <th>Containment Action</th>
+                  <th>Containment Action Date</th>
+                  <th>Corrective Action</th>
+                  <th>Corrective Action 2</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="btnaction">
+          <button onclick="generateComplaintList()" class="newbtn green-btn">
+            Generate
+          </button>
+          <button class="newbtn btn-defult">Excel</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>

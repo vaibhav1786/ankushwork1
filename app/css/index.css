@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #fff5e8;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.table_parent {
+  margin: 20px 40px;
+  border: 2px solid #000000;
+}
+.table_header h2 {
+  color: white;
+
+  font-size: 20px;
+}
+#refreshButton {
+  background: #e5e5e5;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table_header {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: center;
+  padding: 10px;
+  background: #0f413b;
+}
+.search_header {
+  display: flex;
+  gap: 10px;
+}
+.search_header button {
+  background: #377937;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+}
+.right_headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.refresh img {
+  width: 20px;
+  cursor: pointer;
+}
+.table_dataSection {
+  max-width: 1024px;
+  display: grid;
+  gap: 10px;
+  border-bottom: 2px solid #c2c1c1;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.flex_table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.completeData {
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.completeData select {
+  width: 140px;
+}
+.completeData input {
+  width: 136px;
+}
+.table_records {
+  height: 283px;
+  display: block;
+  overflow-x: auto;
+}
+
+.table_records table thead th {
+  border: 1px solid #525252;
+  padding: 5px;
+  background-color: #ecefee;
+}
+.width-100 {
+  width: 100px;
+}
+.width-200 {
+  width: 200px;
+}
+.width-250 {
+  width: 250px;
+}
+.width-300 {
+  width: 300px;
+}
+.width-400 {
+  width: 400px;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.record_found {
+  color: #008900;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+table tbody tr td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.compldata {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #0000;
+  border-bottom: 1px solid #0000;
+  padding: 10px;
+  border-color: #000000;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: 100px;
+}
+
+.compldata ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 50px;
+  max-width: 700px;
+  flex: 1;
+}
+
+.compldata ul .completeData {
+  gap: 33px;
+}
+
+.newtablezebra {
+  padding: 3px;
+}
+
+.newtablezebra table {
+  border-collapse: collapse;
+}
+
+.newtablezebra table thead tr th {
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.newtablezebra tbody tr:nth-child(odd) {
+  /* color:green; */
+  background: #f9f9f9;
+}
+
+.newtablezebra tbody tr:nth-child(even) {
+  background: #fff;
+}
+
+.newtablezebra tbody tr td {
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 14px;
+}
+
+/* footer style */
+footer.footer {
+  background: #0f413b;
+  padding: 10px 0px;
+}
+
+footer.footer .btnaction {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-defult {
+  border-color: #6a7d7d;
+  background: #6a7d7d;
+  color: #fff;
+}
+
+.allcopy {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 14px;
+}
+/* END footer style */
+
+.newbtn {
+  width: 100px;
+  border-color: transparent;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px 0px;
+  pointer-events: painted;
+  cursor: pointer;
+}
+
+.green-btn {
+  background: #52a854;
+  border-color: #38833e;
+  color: #fff;
+  padding: 10px;
+}
+
+/* content box style  */
+.contentboxouter {
+  height: calc(100vh - 41px);
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 10px;
+}
+/* END content box style  */
+
+@media screen and (max-width: 600px) {
+  .table_parent {
+    margin: 10px;
+  }
+  .table_header {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .compldata {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+  }
+  .compldata ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+  }
+}
